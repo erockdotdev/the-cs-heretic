@@ -1,0 +1,13 @@
+## Computer Science Orders of Magnitude & Performance Reference Chart
+
+This reference chart maps standard mathematical orders of magnitude to hardware execution limits and algorithmic relevance in software engineering and coding interviews.
+
+### Orders of Magnitude Reference Matrix
+
+| Order of Magnitude      | Exact Value     | What It Actually Means (Hardware / Scale)                                                 | Algorithmic Relevance & Use Cases                                                                                                                                                                    |
+| ----------------------- | --------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **$10^1$ to $10^2$**    | 10 to 100       | Micro-scale input size; processes in microseconds.                                        | **Exponential / Factorial Complexity ($O(2^n)$, $O(n!)$)**: Used for brute-force permutations, subsets, and backtracking where $N \le 20$.                                                           |
+| **$10^4$**              | 10,000          | Small input scale; handles heavier nested iterations safely.                              | **Cubic Complexity ($O(n^3)$)**: Typical limit for triple-nested loops, such as the Floyd-Warshall all-pairs shortest path algorithm where $N \le 400$.                                              |
+| **$10^6$ to $10^7$**    | 1 to 10 million | Medium-to-large scale input; processes in tens of milliseconds.                           | **Quadratic ($O(n^2)$) & Log-Linear ($O(n \log n)$)**: Upper limits for standard sorting algorithms ($N \le 10^6$) and double-nested loops ($N \le 5,000$).                                          |
+| **$10^8$**              | 100 million     | The standard **CPU instruction throughput budget** per second.                            | **The 1-Second Time Limit**: The maximum number of simple arithmetic or memory operations a standard CPU can execute before hitting typical online judge timeout limits.                             |
+| **$10^9$ to $10^{10}$** | 1 to 10 billion | Massive data scale; exceeds standard single-second execution windows for basic iteration. | **Linear ($O(n)$) at Scale & Sub-linear ($O(\log n)$, $O(1)$)**: Required for massive inputs ($N \ge 10^5$ to $10^9$). Also represents the catastrophic failure point of $O(n^2)$ brute-force traps. |

@@ -1,0 +1,13 @@
+{
+  "name": "the-cs-heretic",
+  "version": "0.1.0",
+  "description": "A very WIP collection of JS/TS focused Interviewing and DSA guides. Expect unpredictable changes - use at your own risk.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Your Name eric@erock.dev",
+  "license": "MIT",
+  "type": "commonjs"
+}

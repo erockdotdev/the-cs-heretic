@@ -1,0 +1,11 @@
+{
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSaveMode": "modificationsIfAvailable"
+  },
+"prettier.requireConfig": true,
+"cSpell.words": [
+    "nums"
+]
+}
